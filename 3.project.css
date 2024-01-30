@@ -1,0 +1,145 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 2px 2px #212121 ;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #efebfa;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: right;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #5924ed;
+}
+
+.details{
+    margin-left: 4%;
+    margin-top: 8%;
+    color: #efebfa;
+}
+
+.details h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: #5924ed;
+    
+}
+
+.details p{
+    color: #555;
+    line-height: 22px;
+}
+
+.details a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #efebfa;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+
+/* animations */
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+a {
+  flex: 1;
+  background-color: #efebfa;
+  color: #fff;
+  /* border: 1px solid; */
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+a:hover,
+a:focus {
+  background-color: #efebfa;
+  color: #333;
+}
+
+
+
+@keyframes bounce-right {
+    0% {
+      transform: translateX(100%);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(0);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  h2 {
+    animation: bounce-right 15s ease;
+  }
